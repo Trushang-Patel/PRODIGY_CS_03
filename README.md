@@ -14,7 +14,6 @@
 - [Technologies Used](#technologies-used)
 - [Customization](#customization)
 - [Contributing](#contributing)
-- [License](#license)
 - [Author](#author)
 
 ## 🔍 Overview
@@ -58,8 +57,8 @@ Perfect for:
 Simply clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/Trushang-Patel/password-strength-checker.git
-cd password-strength-checker
+git clone https://github.com/Trushang-Patel/PRODIGY_CS_03.git
+cd PRODIGY_CS_03
 ```
 
 No build process or dependencies are required. The application uses vanilla HTML, CSS, and JavaScript.
