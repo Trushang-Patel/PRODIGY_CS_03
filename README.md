@@ -1,11 +1,9 @@
 # Password Strength Checker
 
-![Password Strength Checker Banner](./assets/banner.png)
-
 > A modern, interactive tool to assess password strength based on multiple security criteria.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-2025--05--18-brightgreen.svg)](https://github.com/Trushang-Patel/password-strength-checker)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-2025--05--18-brightgreen.svg)](https://github.com/Trushang-Patel/PRODIGY_CS_03)
 
 ## 📋 Table of Contents
 - [Overview](#overview)
@@ -50,9 +48,10 @@ Perfect for:
 
 ## 📸 Screenshots
 
-![Strong Password Example](./assets/strong-password.png)
-![Weak Password Example](./assets/weak-password.png)
-![Mobile View](./assets/mobile-view.png)
+ Strong Password | Weak Password | Mobile View |
+|:--------------:|:-------------:|:-----------:|
+| ![Strong Password Example](./assets/strong-password.png) | ![Weak Password Example](./assets/weak-password.png) | ![Mobile View](./assets/mobile-view.png) |
+| Excellent security with all criteria met | Shows warning indicators and improvement suggestions | Responsive design for mobile devices |
 
 ## 💻 Installation
 
@@ -76,7 +75,7 @@ No build process or dependencies are required. The application uses vanilla HTML
 
 ### Online Demo
 
-Try the live demo: [Password Strength Checker Demo](https://trushang-patel.github.io/password-strength-checker)
+Try the live demo: [Password Strength Checker Demo](https://trushang-patel.github.io/PRODIGY_CS_03/)
 
 ## 🛠️ Technologies Used
 
@@ -131,15 +130,9 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 5. Push to the branch: `git push origin feature-name`
 6. Submit a pull request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 👨‍💻 Author
 
 Created by [Trushang-Patel](https://github.com/Trushang-Patel)
-
-Last Updated: 2025-05-18 13:04:47 UTC
 
 ---
 
