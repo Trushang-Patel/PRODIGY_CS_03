@@ -1,0 +1,335 @@
+/* Modern CSS Reset */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #4361ee;
+    --primary-light: #4895ef;
+    --primary-dark: #3f37c9;
+    --danger-color: #e63946;
+    --warning-color: #f9c74f;
+    --success-color: #2a9d8f;
+    --neutral-color: #8d99ae;
+    --light-color: #f1faee;
+    --dark-color: #1d3557;
+    --card-bg: #ffffff;
+    --bg-color: #f8f9fa;
+    
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+    
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 16px;
+    
+    --transition: all 0.25s ease;
+    --font-main: 'Segoe UI', Roboto, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    font-family: var(--font-main);
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark-color);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 550px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.card-header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    opacity: 0.9;
+    font-size: 15px;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.card-footer {
+    background-color: var(--bg-color);
+    padding: 20px 30px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.password-container {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--dark-color);
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon {
+    position: absolute;
+    left: 15px;
+    color: var(--neutral-color);
+}
+
+input {
+    width: 100%;
+    padding: 14px 14px 14px 45px;
+    font-size: 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: var(--radius-md);
+    outline: none;
+    transition: var(--transition);
+}
+
+input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.15);
+}
+
+#toggle-password {
+    position: absolute;
+    right: 12px;
+    background: none;
+    border: none;
+    color: var(--neutral-color);
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    transition: var(--transition);
+}
+
+#toggle-password:hover {
+    color: var(--dark-color);
+}
+
+.strength-section {
+    margin-bottom: 20px;
+}
+
+.strength-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.strength-meter {
+    height: 8px;
+    background-color: #edf2f7;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.strength-segments {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.segment {
+    flex: 1;
+    height: 100%;
+    margin-right: 3px;
+    border-radius: var(--radius-sm);
+    background-color: #edf2f7;
+    transition: var(--transition);
+}
+
+.segment:last-child {
+    margin-right: 0;
+}
+
+.segment.active-1 { background-color: var(--danger-color); }
+.segment.active-2 { background-color: #e76f51; } /* Orange-red */
+.segment.active-3 { background-color: var(--warning-color); }
+.segment.active-4 { background-color: #90be6d; } /* Light green */
+.segment.active-5 { background-color: var(--success-color); }
+
+.feedback {
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: var(--radius-md);
+    margin-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.feedback i {
+    margin-right: 10px;
+    font-size: 18px;
+    margin-top: 2px;
+}
+
+.feedback.weak {
+    background-color: #fdeded;
+    color: #5f2120;
+}
+
+.feedback.medium {
+    background-color: #fff4e5;
+    color: #663c00;
+}
+
+.feedback.strong {
+    background-color: #e9f6ee;
+    color: #1e4620;
+}
+
+.criteria-section {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: var(--radius-md);
+    margin-bottom: 20px;
+}
+
+.criteria-section h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: var(--dark-color);
+}
+
+.criteria-list {
+    list-style-type: none;
+}
+
+.criteria-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #4a5568;
+}
+
+.criteria-list li:last-child {
+    margin-bottom: 0;
+}
+
+.criteria-list i {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.fa-times-circle {
+    color: var(--danger-color);
+}
+
+.fa-check-circle {
+    color: var(--success-color);
+}
+
+.tips {
+    font-size: 14px;
+}
+
+.tips h4 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: var(--dark-color);
+}
+
+.tips h4 i {
+    color: var(--warning-color);
+    margin-right: 8px;
+}
+
+.tips ul {
+    list-style-type: none;
+    padding-left: 25px;
+}
+
+.tips li {
+    position: relative;
+    margin-bottom: 8px;
+    color: #4a5568;
+}
+
+.tips li::before {
+    content: "•";
+    position: absolute;
+    left: -14px;
+    color: var(--primary-light);
+}
+
+.attribution {
+    text-align: center;
+    font-size: 13px;
+    color: #718096;
+}
+
+.timestamp {
+    margin-top: 4px;
+    font-size: 12px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .card-header {
+        padding: 25px 20px;
+    }
+    
+    .card-body, .card-footer {
+        padding: 20px;
+    }
+    
+    .card-header h1 {
+        font-size: 22px;
+    }
+    
+    .feedback, .criteria-section {
+        padding: 15px;
+    }
+}
+
+/* Animations */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.pulse {
+    animation: pulse 0.6s;
+}
